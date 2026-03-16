@@ -1,0 +1,34 @@
+aid: apache-calcite
+name: Apache Calcite
+description: >-
+  Apache Calcite is a dynamic data management framework that provides SQL parsing, query optimization, and data federation capabilities. It serves as the SQL engine for many big data systems including Apache Hive, Druid, Flink, and others.
+type: Index
+position: Consumer
+access: 3rd-Party
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - SQL
+  - Query Optimization
+  - Data Federation
+  - Framework
+created: '2026-03-16'
+modified: '2026-03-16'
+url: >-
+  https://raw.githubusercontent.com/api-evangelist/apache-calcite/refs/heads/main/apis.yml
+specificationVersion: '0.19'
+apis:
+  - aid: apache-calcite:apache-calcite
+    name: Apache Calcite
+    description: >-
+      Calcite provides a Java API for SQL parsing, validation, and optimization, along with adapter APIs for connecting to heterogeneous data sources and a JDBC driver for SQL query execution.
+    humanURL: https://calcite.apache.org/docs/
+    tags:
+      - SQL
+      - Java
+      - Query Engine
+    properties:
+      - type: Documentation
+        url: https://calcite.apache.org/docs/
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
