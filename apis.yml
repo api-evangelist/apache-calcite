@@ -7,10 +7,10 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - SQL
-  - Query Optimization
   - Data Federation
   - Framework
+  - Query Optimization
+  - SQL
 created: '2026-03-16'
 modified: '2026-03-16'
 url: >-
@@ -23,9 +23,9 @@ apis:
       Calcite provides a Java API for SQL parsing, validation, and optimization, along with adapter APIs for connecting to heterogeneous data sources and a JDBC driver for SQL query execution.
     humanURL: https://calcite.apache.org/docs/
     tags:
-      - SQL
       - Java
       - Query Engine
+      - SQL
     properties:
       - type: Documentation
         url: https://calcite.apache.org/docs/
