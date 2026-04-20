@@ -1,0 +1,51 @@
+vocabulary:
+  provider: Apache Calcite
+  description: >-
+    Domain taxonomy mapping resources, actions, and personas for Apache Calcite
+    SQL parsing, query optimization, and data federation operations.
+
+  operational:
+    resources:
+      - name: SqlNode
+        description: Parsed representation of a SQL statement or expression as an abstract syntax tree node.
+      - name: RelNode
+        description: Relational expression node representing an operator in the query plan tree.
+      - name: RelOptCluster
+        description: Environment for a query optimization session including type factory and planner state.
+      - name: RelOptRule
+        description: A transformation rule that matches and rewrites relational expression patterns.
+      - name: RelDataType
+        description: SQL data type representation used for type validation and inference.
+      - name: SchemaPlus
+        description: Root schema object that holds table and sub-schema definitions for the query engine.
+      - name: CalciteConnection
+        description: JDBC connection to a Calcite schema for issuing SQL queries.
+      - name: AvaticaServer
+        description: HTTP server exposing the Avatica remote JDBC protocol for remote client connections.
+
+    actions:
+      - name: Parse
+        description: Parse a SQL string into an abstract syntax tree representation.
+      - name: Validate
+        description: Validate a parsed SQL statement against a schema for type correctness.
+      - name: Plan
+        description: Convert a validated SQL statement into a relational algebra plan.
+      - name: Optimize
+        description: Apply optimization rules to a relational plan to produce a more efficient execution plan.
+      - name: Execute
+        description: Execute an optimized plan against connected data sources and return results.
+      - name: Rewrite
+        description: Transform a relational plan using materialized view or lattice-based rewriting.
+      - name: Register
+        description: Register a schema, adapter, or optimization rule with the Calcite framework.
+
+    personas:
+      - name: Application Developer
+        description: Java developer embedding Calcite SQL capabilities into a custom application or data service.
+      - name: Query Engine Developer
+        description: Engineer building a custom SQL engine or query planner using the Calcite framework.
+
+  crossReference:
+    documentation: https://calcite.apache.org/docs/
+    javadoc: https://calcite.apache.org/javadocAggregate/
+    avatica: https://calcite.apache.org/avatica/docs/
