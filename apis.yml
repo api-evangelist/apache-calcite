@@ -63,6 +63,10 @@ apis:
       - type: APIReference
         url: https://calcite.apache.org/avatica/javadocAggregate/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/apache-calcite-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/apache-calcite-domain-security.yml
   - type: GitHubOrganization
     url: https://github.com/apache
   - type: GitHubRepository
