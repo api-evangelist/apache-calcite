@@ -95,6 +95,8 @@ apis:
       - type: APIReference
         url: https://calcite.apache.org/avatica/javadocAggregate/
 common:
+  - type: Website
+    url: https://www.apache.org/
   - type: SecurityPolicy
     url: https://github.com/apache/calcite/blob/main/SECURITY.md
   - type: CodeOfConduct
