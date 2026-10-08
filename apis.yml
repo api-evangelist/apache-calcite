@@ -96,6 +96,12 @@ apis:
       - type: APIReference
         url: https://calcite.apache.org/avatica/javadocAggregate/
 common:
+  - type: Plans
+    url: plans/apache-calcite-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/apache-calcite-rate-limits.yml
+  - type: FinOps
+    url: finops/apache-calcite-finops.yml
   - type: Website
     url: https://www.apache.org/
   - type: SecurityPolicy
