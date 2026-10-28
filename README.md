@@ -1,4 +1,4 @@
-# Apache Calcite (apache-calcite)
+# Apache Calcite
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,117 +66,114 @@
 
 Apache Calcite is a dynamic data management framework developed by the Apache Software Foundation that provides SQL parsing, query planning and optimization, and data federation capabilities. It serves as the SQL engine and query optimizer for many big data systems including Apache Hive, Druid, Flink, Kafka Streams, and others. Calcite provides a Java API for embedding SQL capabilities into applications, a JDBC adapter for connecting heterogeneous data sources, and an extensible relational algebra framework for building custom query optimizers.
 
-**URL:** [https://calcite.apache.org/](https://calcite.apache.org/)
+**Areas:** Apache · Data Federation · Framework · Open Source · Query Optimization · SQL
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
+## Apache Calcite on APIs.io
 
-## Tags
+Everything profiled for Apache Calcite is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/apache-calcite/](https://apis.io/providers/apache-calcite/)** — or go straight to one of the APIs or properties below.
 
- - Apache, Data Federation, Framework, Open Source, Query Optimization, SQL
+### APIs (3)
 
-## Timestamps
+- [Apache Calcite Java API](https://apis.io/apis/apache-calcite/apache-calcite-java-api/) — The Apache Calcite Java API provides SQL parsing, validation, query planning, and optimization capabilities for embedding in JVM applications. It exposes a…
+- [Apache Calcite JDBC API](https://apis.io/apis/apache-calcite/apache-calcite-jdbc-api/) — The Apache Calcite JDBC adapter provides a standard JDBC interface over heterogeneous data sources. Applications use it to issue SQL queries across multiple…
+- [Apache Calcite Avatica API](https://apis.io/apis/apache-calcite/apache-calcite-avatica-api/) — Apache Avatica is a framework for building database drivers derived from Apache Calcite. It provides a JSON/Protobuf-over-HTTP remote protocol for JDBC…
 
-- **Created:** 2026-03-16
-- **Modified:** 2026-04-19
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### Apache Calcite Java API
-The Apache Calcite Java API provides SQL parsing, validation, query planning, and optimization capabilities for embedding in JVM applications. It exposes a relational algebra framework and pluggable optimizer rules for building custom query engines.
+#### Vocabulary (1)
 
-**Human URL:** [https://calcite.apache.org/docs/](https://calcite.apache.org/docs/)
+The provider's domain terms, defined.
 
-#### Tags
+- [Apache Calcite Vocabulary](https://apis.io/vocabularies/apache-calcite/apache-calcite-vocabulary/)
 
- - Java, Query Engine, SQL
+#### Security (2)
 
-#### Properties
+Authentication, trust centre, and vulnerability disclosure.
 
-- [Documentation](https://calcite.apache.org/docs/)
-- [APIReference](https://calcite.apache.org/javadocAggregate/)
-- [GettingStarted](https://calcite.apache.org/docs/tutorial.html)
+- [Apache Calcite Domain Security](https://apis.io/security/apache-calcite/apache-calcite-domain-security/)
+- [Apache Calcite Vulnerability Disclosure](https://apis.io/security/apache-calcite/apache-calcite-vulnerability-disclosure/)
 
-### Apache Calcite JDBC API
-The Apache Calcite JDBC adapter provides a standard JDBC interface over heterogeneous data sources. Applications use it to issue SQL queries across multiple data formats and storage systems through a unified SQL interface.
+#### Plans and pricing (1)
 
-**Human URL:** [https://calcite.apache.org/docs/adapter.html](https://calcite.apache.org/docs/adapter.html)
+Published plans, tiers and prices.
 
-#### Tags
+- [Apache Calcite Plans Pricing](https://apis.io/plans/apache-calcite/apache-calcite-plans-pricing/)
 
- - JDBC, SQL
+#### Rate limits (1)
 
-#### Properties
+Published request limits.
 
-- [Documentation](https://calcite.apache.org/docs/adapter.html)
+- [Apache Calcite Rate Limits](https://apis.io/rate-limits/apache-calcite/apache-calcite-rate-limits/)
 
-### Apache Calcite Avatica API
-Apache Avatica is a framework for building database drivers derived from Apache Calcite. It provides a JSON/Protobuf-over-HTTP remote protocol for JDBC clients to connect to Calcite-based query engines.
+#### FinOps (1)
 
-**Human URL:** [https://calcite.apache.org/avatica/docs/](https://calcite.apache.org/avatica/docs/)
+What the API costs to run, by operation.
 
-#### Tags
+- [Apache Calcite Finops](https://apis.io/finops/apache-calcite/apache-calcite-finops/)
 
- - Avatica, HTTP, JDBC
+## Where to find this API
 
-#### Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-- [Documentation](https://calcite.apache.org/avatica/docs/)
-- [APIReference](https://calcite.apache.org/avatica/javadocAggregate/)
-
-## Common Properties
-
-- [GitHubOrganization](https://github.com/apache)
-- [GitHubRepository](https://github.com/apache/calcite)
+- [Website](https://www.apache.org/)
 - [Documentation](https://calcite.apache.org/)
-- [GettingStarted](https://calcite.apache.org/docs/tutorial.html)
+- [Getting started](https://calcite.apache.org/docs/tutorial.html)
 - [Support](https://calcite.apache.org/community/)
-- [TermsOfService](https://www.apache.org/licenses/)
-- [ChangeLog](https://github.com/apache/calcite/releases)
-- [Java SDK (Maven)](https://search.maven.org/artifact/org.apache.calcite/calcite-core)
+- [Changelog](https://github.com/apache/calcite/releases)
+- [Terms of service](https://www.apache.org/licenses/)
+- [GitHub](https://github.com/apache)
 
-## Features
+## API Evangelist rating
 
-| Name | Description |
-|------|-------------|
-| SQL Parsing and Validation | Parse and validate SQL queries using an extensible SQL grammar with support for SQL:2003 and beyond. |
-| Query Optimization | Cost-based and rule-based query optimization using a volcano-style optimizer with pluggable optimization rules. |
-| Relational Algebra | Extensible relational algebra framework for representing and transforming query plans as expression trees. |
-| Data Federation | Federate queries across heterogeneous data sources including CSV, JSON, JDBC databases, and Elasticsearch. |
-| Adapter Framework | Pluggable adapter API for connecting new data sources to the Calcite SQL engine. |
-| Materialized Views | Automatic materialized view recognition and query rewriting for query acceleration. |
-| Streaming SQL | SQL extensions for querying streaming data sources with window functions and temporal predicates. |
-| Lattices and Tiles | Summary table recommendation and query rewriting using lattice structures for OLAP workloads. |
-| JDBC Driver | Standard JDBC driver for issuing SQL queries against Calcite-connected data sources. |
-| Avatica Remote Protocol | JSON/Protobuf-over-HTTP remote JDBC protocol for connecting clients to Calcite-based query servers. |
+**Kin Score 27.8** — thin · rubric 0.24.0 · scored 2026-10-17
 
-## Use Cases
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 13.6 |
+| Operational transparency | 36.8 |
+| Developer ergonomics | 40.5 |
+| Access clarity | 18.4 |
 
-| Name | Description |
-|------|-------------|
-| Embedding SQL in Applications | Add SQL querying capability to Java applications using the Calcite Java API without a full database. |
-| Building Query Engines | Use Calcite as the SQL parsing and optimization layer in custom query engine implementations. |
-| Data Virtualization | Federate queries across multiple heterogeneous data sources using Calcite adapters. |
-| OLAP Query Optimization | Accelerate analytical queries using materialized view rewriting and lattice-based summary tables. |
-| SQL Dialect Translation | Parse SQL in one dialect and transpile it to another using Calcite's SQL generation framework. |
+**Agent readiness 0.6** — human-only
 
-## Integrations
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
 
-| Name | Description |
-|------|-------------|
-| Apache Flink | Flink uses Calcite for SQL parsing and query optimization in Flink SQL and Table API. |
-| Apache Hive | Hive uses Calcite for cost-based query optimization in HiveQL query planning. |
-| Apache Druid | Druid uses Calcite for SQL query parsing and planning against its time-series data store. |
-| Apache Kafka | ksqlDB and Kafka Streams use Calcite for SQL stream processing query planning. |
-| Apache Beam | Beam SQL uses Calcite for query planning on PCollection-based streaming and batch pipelines. |
-| Elasticsearch | Calcite provides a SQL adapter for querying Elasticsearch indices using standard SQL. |
-| Apache Kylin | Kylin uses Calcite as its SQL engine for OLAP cube query planning and execution. |
+**Regulatory alignment 20.6** — Horizontal (data, software, accessibility, platform)
 
-## Vocabulary
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/apache-calcite/](https://apis.io/providers/apache-calcite/).
 
-- [Apache Calcite Vocabulary](vocabulary/apache-calcite-vocabulary.yaml) — Domain taxonomy mapping 8 resources, 7 actions, and 2 personas for SQL query engine development
+## How this profile is made
 
-## Maintainers
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
 
-**FN:** Kin Lane
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Apache Calcite: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
 
-**Email:** info@apievangelist.com
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/apache-calcite/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
